@@ -1,0 +1,36 @@
+﻿@model CQRS_Casgem.CQRSPattern.Results.GetProductByIdQueryResult
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetProduct</title>
+</head>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<body>
+    <div class="container">
+        <br /><br />
+
+        <form method="get">
+            <label>Ürün Id</label>
+            <input type="text" asp-for="ProductID" class="form-control" />
+            <br />
+            <label>Ürün adı</label>
+            <input type="text" asp-for="ProductName" class="form-control" />
+            <br />
+            <label>Ürün Markası</label>
+            <input type="text" asp-for="ProductMark" class="form-control" />
+            <br />
+
+        </form>
+        
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model CQRS_Casgem.CQRSPattern.Commands.CreateProductCommand
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>ürün Adı</label>
+        <input type="text" class="form-control" asp-for="Name"/>
+        <br />
+        <label>ürün Fiyatı</label>
+        <input type="text" class="form-control" asp-for="Price" />
+        <br />
+        <label>ürün Marka</label>
+        <input type="text" class="form-control" asp-for="Brand" />
+        <br />
+        <label>ürün Stok Sayısı</label>
+        <input type="text" class="form-control" asp-for="Stock" />
+        <br />
+        <label>ürün Kategorisi</label>
+        <input type="text" class="form-control" asp-for="Category" />
+        <br />
+        <button class="btn btn-primary">Ürünü ekle</button>
+    </form>
+
+</div>
